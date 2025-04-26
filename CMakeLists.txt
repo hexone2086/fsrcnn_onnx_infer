@@ -28,10 +28,10 @@ include_directories(
 )
 
 # Add executable
-add_executable(fsrcnn single_image_sr_onnx.cpp)
+add_executable(fsrcnn_test single_image_sr_onnx.cpp test.cc)
 
 # Link libraries
-target_link_libraries(fsrcnn
+target_link_libraries(fsrcnn_test
     ${OpenCV_LIBS}
     ${ONNXRuntime_LIBRARIES}
 )
